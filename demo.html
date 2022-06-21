@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Hesapla</title>
+</head>
+
+<body>
+    <div class="click">
+        <button style="border-radius: 5px;">Arka Plan Resim Değiştir</button>
+    </div>
+    <div class="container mt-4">
+        <h1 >Kredi Hesapla</h1>
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <form action="#" id="formLoan">
+                    <label for="txtLoanAmount">Çekilecek Tutarı Giriniz :</label>
+                    <input type="text" name="" id="txtLoanAmount">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <label for="select">Vade :</label>
+                <select name="" id="listDate">
+                    <option value="12">12 Ay</option>
+                    <option value="24">24 Ay</option>
+                    <option value="36">36 Ay</option>
+                    <option value="48">48 Ay</option>
+                </select>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 ">
+                <input class="calculate_button" type="button" value="Hesapla" onclick="creditAccount();">
+                
+                </form>
+                <h5 id="result" ></h5>
+                
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
